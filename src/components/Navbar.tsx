@@ -15,9 +15,9 @@ const Navbar: FC = () => {
               OPRA<span className="text-slate-800">Exam</span>
             </Link>
           </div>
-          
+
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-6 items-center">
             <Link href="/" className="text-slate-600 hover:text-emerald-600 font-medium transition-colors">
               Home
             </Link>
@@ -30,11 +30,21 @@ const Navbar: FC = () => {
             <Link href="/blog" className="text-slate-600 hover:text-emerald-600 font-medium transition-colors">
               Blog
             </Link>
+            {/* Pro Mock Test — monetisation CTA */}
+            <a
+              href="https://gumroad.com/l/opra-pro-mock-test-pack"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-700 hover:text-emerald-600 font-semibold transition-colors flex items-center gap-1"
+            >
+              <span className="text-xs bg-emerald-100 text-emerald-700 rounded-full px-2 py-0.5 font-bold uppercase tracking-wide">Pro</span>
+              Mock Tests
+            </a>
           </nav>
-          
+
           <div className="hidden md:flex items-center">
-            <Link 
-              href="/opra-quiz" 
+            <Link
+              href="/opra-quiz"
               className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
             >
               Free OPRA Quiz
@@ -43,7 +53,7 @@ const Navbar: FC = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
-            <button 
+            <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-slate-600 hover:text-emerald-600 focus:outline-none p-2"
               aria-label="Toggle menu"
@@ -76,6 +86,15 @@ const Navbar: FC = () => {
             <Link href="/blog" onClick={() => setIsOpen(false)} className="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-emerald-50">
               Blog
             </Link>
+            <a
+              href="https://gumroad.com/l/opra-pro-mock-test-pack"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsOpen(false)}
+              className="block px-3 py-3 rounded-md text-base font-semibold text-emerald-700 hover:bg-emerald-50"
+            >
+              🏆 Pro Mock Test Pack
+            </a>
             <Link href="/opra-quiz" onClick={() => setIsOpen(false)} className="block px-3 py-3 mt-4 text-center rounded-md font-medium bg-emerald-600 text-white hover:bg-emerald-700 shadow-sm">
               Free OPRA Quiz
             </Link>

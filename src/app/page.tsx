@@ -204,14 +204,28 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* March Card */}
             <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group flex flex-col items-center text-center">
               <div className="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-6 text-xl font-bold group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all">
                 Mar
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-2">March 23–25</h3>
-              <p className="text-slate-500 mb-2">Spring 2026 Session. Ideal for those who have completed their syllabus review.</p>
+              <p className="text-slate-500 mb-4">Spring 2026 Session. Ideal for those who have completed their syllabus review.</p>
+              <div className="mt-auto w-full border-t border-slate-100 pt-4 flex flex-col gap-2">
+                <a
+                  href="https://www.pharmacycouncil.org.au/pharmacist/exam-information/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                  Verify on APC website
+                </a>
+                <p className="text-[11px] text-slate-400">✓ Last verified: March 2026</p>
+              </div>
             </div>
-            
+
+            {/* July Card */}
             <div className="bg-white rounded-3xl p-8 border border-emerald-200 shadow-xl relative transition-all duration-300 transform hover:-translate-y-2 group flex flex-col items-center text-center ring-2 ring-emerald-500 ring-offset-4 ring-offset-slate-50">
               <div className="absolute top-0 right-0 -mt-3 -mr-3 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm animate-pulse">
                 Filling Fast
@@ -220,15 +234,40 @@ export default function Home() {
                 Jul
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-2">July 13–15</h3>
-              <p className="text-slate-500 mb-2">Summer 2026 Session. The most popular testing window. High demand expected.</p>
+              <p className="text-slate-500 mb-4">Summer 2026 Session. The most popular testing window. High demand expected.</p>
+              <div className="mt-auto w-full border-t border-slate-100 pt-4 flex flex-col gap-2">
+                <a
+                  href="https://www.pharmacycouncil.org.au/pharmacist/exam-information/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-1.5 text-xs font-semibold text-emerald-600 hover:text-emerald-700 transition-colors"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                  Verify on APC website
+                </a>
+                <p className="text-[11px] text-slate-400">✓ Last verified: March 2026</p>
+              </div>
             </div>
-            
+
+            {/* November Card */}
             <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group flex flex-col items-center text-center">
               <div className="w-16 h-16 bg-purple-50 text-purple-600 rounded-full flex items-center justify-center mb-6 text-xl font-bold group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all">
                 Nov
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-2">November 23–25</h3>
-              <p className="text-slate-500 mb-2">Fall 2026 Session. Perfect target for candidates needing extra preparation time.</p>
+              <p className="text-slate-500 mb-4">Fall 2026 Session. Perfect target for candidates needing extra preparation time.</p>
+              <div className="mt-auto w-full border-t border-slate-100 pt-4 flex flex-col gap-2">
+                <a
+                  href="https://www.pharmacycouncil.org.au/pharmacist/exam-information/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-1.5 text-xs font-semibold text-purple-600 hover:text-purple-700 transition-colors"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                  Verify on APC website
+                </a>
+                <p className="text-[11px] text-slate-400">✓ Last verified: March 2026</p>
+              </div>
             </div>
           </div>
         </div>
