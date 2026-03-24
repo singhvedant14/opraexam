@@ -14,9 +14,6 @@ export const metadata: Metadata = {
   },
   description: "Comprehensive guide for the OPRA exam Australia (Overseas Pharmacist Readiness Assessment). Get details on syllabus, fees, dates, and preparation materials.",
   keywords: ["OPRA exam Australia", "pharmacist readiness assessment", "OPRA syllabus", "OPRA exam fees", "OPRA exam dates", "Australia pharmacy exam"],
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     type: "website",
     locale: "en_AU",
@@ -34,6 +31,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} scroll-smooth antialiased`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "OPRA Exam Guide",
+              "url": "https://opraexam.in",
+              "description": "Comprehensive operational guide and study resources for the Australian OPRA pharmacist exam."
+            })
+          }}
+        />
+      </head>
       <body className="font-sans min-h-screen flex flex-col bg-slate-50 text-slate-900">
         <Navbar />
         <main className="flex-1 w-full flex flex-col items-center">

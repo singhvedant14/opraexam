@@ -14,6 +14,7 @@ export default function TableOfContents() {
         text: element.textContent || "",
         level: Number(element.tagName.replace("H", ""))
       }));
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setHeadings(elements);
 
     // Setup IntersectionObserver for scroll spy
